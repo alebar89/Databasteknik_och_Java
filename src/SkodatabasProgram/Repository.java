@@ -197,7 +197,8 @@ public class Repository implements IRepository {
 
 
 
-    //VG-DELEN FRÅGA 2 (HÖGRE ORDNINGENS FUNKTIONER!)
+    //VG-DELEN FRÅGA 2
+
     public void numberOfOrdersPerCustomer(List<Kund> allClients) {
         allClients.forEach(client -> {
             int numberOfOrders = getCustomerOrders(client.getId()).size();
@@ -291,7 +292,6 @@ public class Repository implements IRepository {
 
 
     //   VG-DELEN FRÅGA 4 ------------------------------------------
-
 
     public Map<String, Double> spentAmountPerCity() {
         Map<String, Double> spentAmountPerCity = new HashMap<>();
